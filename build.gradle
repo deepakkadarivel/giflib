@@ -1,7 +1,19 @@
 group 'com.droidinlabs'
 version '1.0-SNAPSHOT'
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-gradle-plugin
+        classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.4.3.RELEASE'
+    }
+}
+
 apply plugin: 'java'
+apply plugin: 'spring-boot'
 
 sourceCompatibility = 1.5
 
